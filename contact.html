@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>El Bimbo Tools Rental-Contact</title>
+    <style>
+        body {
+            overflow-y: hidden;
+        }
+
+        .contact-box {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 14px;
+            height: 100%;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 24px;
+            margin-bottom: 0;
+            border-radius: var(--radius);
+        }
+        .contact-item .text-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-grid {
+            align-items: stretch;
+        }
+
+        .action-card {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="wrap nav">
+            <a href="#" class="brand">
+                <img src="logo.png" alt="El Bimbo Tools Rental logo">
+                <div class="brand-text">
+                    <strong>EL BIMBO</strong>
+                    <span>Tools Rental</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">About</a>
+                <a href="tools.html">Tools</a>
+                <a href="prices.html">Prices</a>
+                <a href="packages.html">Packages</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <section id="contact">
+        <div class="wrap">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Fast inquiry for rates, availability, and rentals.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-box">
+                    <div class="card contact-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="text-group">
+                            <small>Phone</small>
+                            <strong><a href="tel:+639754733230">+639754733230</a></strong>
+                        </div>
+                    </div>
+
+                    <div class="card contact-item">
+                        <div class="icon-box">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="text-group">
+                            <small>Facebook</small>
+                            <strong><a href="https://www.facebook.com/profile.php?id=61585531997925" target="_blank">El Bimbo Tools Rental</a></strong>
+                        </div>
+                    </div>
+
+                    <div class="card contact-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="text-group">
+                            <small>Location</small>
+                            <strong>San Roque, Sto. Tomas, Batangas</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card action-card">
+                    <div class="action-header">
+                        <span class="status-badge"><i class="fa-solid fa-circle-check"></i> Available Now</span>
+                        <h3>Need Professional Tools?</h3>
+                    </div>
+
+                    <div class="action-body">
+                        <p><strong>Best for:</strong> Contractors, workers, and homeowners looking for reliable tools without the high cost of purchasing equipment.</p>
+                        <p class="muted">Book now for rates, availability, and bulk rentals.</p>
+                    </div>
+
+                    <div class="cta-row">
+                        <a class="btn btn-primary" href="tel:+639754733230">
+                            <i class="fa-solid fa-phone-flip"></i> Call Now
+                        </a>
+                        <a class="btn btn-secondary" href="tools.html">See Tools</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

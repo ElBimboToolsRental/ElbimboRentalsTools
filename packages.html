@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>El Bimbo Tools Rental-Packages</title>
+    <style>
+      #packages {
+        overflow-x: visible !important;
+      }
+
+      /* Tools table */
+      #packages .table-wrap {
+        width: calc(100% - 80px) !important;
+        max-width: none !important;
+        margin: 0 40px !important;
+        border-radius: var(--radius);
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.08);
+        background: rgba(255,255,255,0.02);
+        box-shadow: var(--shadow);
+      }
+      #packages thead th {
+         background: linear-gradient(180deg, var(--accent-2), var(--accent)) !important;
+          color: #111;
+          padding: 14px 16px !important;
+      }
+      #packages thead tr:first-child th:first-child {
+        border-top-left-radius: var(--radius);
+      }
+      #packages thead tr:first-child th:last-child {
+        border-top-right-radius: var(--radius);
+      }
+      #packages tbody tr:last-child td:first-child {
+        border-bottom-left-radius: var(--radius);
+      }
+      #packages tbody tr:last-child td:last-child {
+        border-bottom-right-radius: var(--radius);
+      }
+      #packages th {
+        padding: 10px 16px !important;
+        font-size: 15px !important;
+        font-weight: 800 !important;
+        line-height: 1.2 !important;
+      }
+      #packages td {
+        padding: 16px !important;
+        font-size: 14px !important;
+      }
+
+      .scaffolding-outer {
+        width: calc(100% - 80px);
+        margin: 80px 40px 0;
+      }
+
+      .table-title-bar {
+        background: #01152c;
+        color: #fff;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 16px 24px;
+        border-radius: 18px 18px 0 0;
+        border: 1px solid rgba(255,255,255,.10);
+        border-bottom: none;
+      }
+
+      .scaffolding-table-wrap {
+        border-radius: 0 0 18px 18px;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.08);
+        background: rgba(255,255,255,0.02);
+        box-shadow: var(--shadow);
+      }
+
+      .scaffolding-table-wrap table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .scaffolding-table-wrap th {
+        background: linear-gradient(180deg, #e8a800, #c98f00);
+        color: #111;
+        font-size: 15px;
+        font-weight: 800;
+        padding: 13px 16px;
+        border-radius: 0 !important;
+        border: none !important;
+      }
+
+      .scaffolding-table-wrap td {
+        padding: 14px 16px;
+        font-size: 14px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: middle;
+      }
+
+      .scaffolding-table-wrap tr:last-child td {
+        border-bottom: none;
+      }
+
+      .scaffolding-table-wrap tbody tr:hover {
+        background: rgba(255,255,255,.02);
+      }
+
+      .scaffolding-table-wrap td:nth-child(4),
+      .scaffolding-table-wrap td:nth-child(5) {
+        text-align: center;
+      }
+      
+
+      @media (max-width: 768px) {
+        #packages .table-wrap {
+          width: calc(100% - 24px) !important;
+          margin: 0 12px !important;
+          overflow-x: auto !important;
+        }
+        #packages table {
+          min-width: 500px !important;
+        }
+        #packages th {
+          font-size: 11px !important;
+          padding: 8px 10px !important;
+          white-space: nowrap !important;
+        }
+        #packages td {
+          font-size: 12px !important;
+          padding: 10px !important;
+        }
+        .scaffolding-outer {
+          width: calc(100% - 24px);
+          margin: 40px 12px 0;
+        }
+        .scaffolding-table-wrap {
+          overflow-x: auto;
+        }
+        .scaffolding-table-wrap table {
+          min-width: 500px;
+        }
+        .scaffolding-table-wrap th {
+          font-size: 11px !important;
+          padding: 8px 10px !important;
+          white-space: nowrap !important;
+        }
+        .scaffolding-table-wrap td {
+          font-size: 12px !important;
+          padding: 10px !important;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+      <div class="wrap nav">
+        <a href="#" class="brand">
+          <img src="logo.png" alt="El Bimbo Tools Rental logo">
+          <div class="brand-text">
+            <strong>EL BIMBO</strong>
+            <span>Tools Rental</span>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">About</a>
+          <a href="tools.html">Tools</a>
+          <a href="prices.html">Prices</a>
+          <a href="packages.html">Packages</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <section id="packages">
+      <div style="padding: 10px 40px 25px 40px;">
+        <div class="section-title" style="margin-bottom:0; padding: 0;">
+          <h2 class="rental">Rental Packages</h2>
+          <p class="simple">Bundle rates for better value.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Package</th>
+              <th>Included Items</th>
+              <th>Best For</th>
+              <th>Daily Rate</th>
+              <th>Weekly Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>⭐ Best Seller - Full Contractor Package</strong></td>
+              <td>DCA Demolition Hammer + Bosch GBH 2-26 Rotary Hammer + DeWALT Angle Grinder + Daiden 300A Welding Machine</td>
+              <td>Comprehensive site renovation</td>
+              <td>₱1,900</td>
+              <td>₱9,500</td>
+            </tr>
+            <tr>
+              <td>🔨 Demolition Package</td>
+              <td>DCA Demolition Hammer + DeWALT Angle Grinder</td>
+              <td>Wall removal & metal cutting</td>
+              <td>₱1,400</td>
+              <td>₱7,000</td>
+            </tr>
+            <tr>
+              <td>🧱 Concrete Work Package</td>
+              <td>Concrete Mixer + Plate Compactor</td>
+              <td>Foundations & slab pouring</td>
+              <td>₱1,900</td>
+              <td>₱9,000</td>
+            </tr>
+            <tr>
+              <td>🪚 Carpentry Package</td>
+              <td>DeWALT Compact Circular Saw + DeWALT Chop Saw</td>
+              <td>Framing & finishing wood work</td>
+              <td>₱900</td>
+              <td>₱4,500</td>
+            </tr>
+            <tr>
+              <td>🧰 Masonry Package</td>
+              <td>Bosch GBH 2-26 Rotary Hammer + DeWALT Angle Grinder</td>
+              <td>General handyman tasks</td>
+              <td>₱900</td>
+              <td>₱4,500</td>
+            </tr>
+            <tr>
+              <td>🏗️ Pro Construction Package</td>
+              <td>DCA Demolition Hammer + Plate Compactor + Concrete Mixer + Daiden Welding Machine + DeWALT Grinder</td>
+              <td>Large scale structural projects</td>
+              <td>₱2,700</td>
+              <td>₱13,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="scaffolding-outer">
+        <div class="table-title-bar">EL BIMBO SCAFFOLDING RENTAL – PACKAGE CATALOG</div>
+        <div class="scaffolding-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Package</th>
+                <th>Included Items</th>
+                <th>Best For</th>
+                <th>Daily Rate</th>
+                <th>Weekly Rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mini Scaffold Set</td>
+                <td>2 H-Frame, 4 Base Jack</td>
+                <td>Minor repairs / light work</td>
+                <td>₱150</td>
+                <td>₱850</td>
+              </tr>
+              <tr>
+                <td>Standard Scaffold Set</td>
+                <td>2 H-Frame, 4 Base Jack, 1 Catwalk, 2 Joint Pin</td>
+                <td>Painting / plastering</td>
+                <td>₱200</td>
+                <td>₱1,100</td>
+              </tr>
+              <tr>
+                <td>Scaffold with Ladder</td>
+                <td>2 H-Frame, 4 Base Jack, 1 Catwalk, 1 Ladder</td>
+                <td>Higher wall work</td>
+                <td>₱230</td>
+                <td>₱1,300</td>
+              </tr>
+              <tr>
+                <td>Mobile Scaffold Set</td>
+                <td>2 H-Frame, 4 Caster Wheels, 1 Catwalk</td>
+                <td>Indoor / ceiling work</td>
+                <td>₱260</td>
+                <td>₱1,450</td>
+              </tr>
+              <tr>
+                <td>Shoring Support Package</td>
+                <td>2 H-Frame, 4 Base Jack, 2 U-Head, 1 Telescopic U-Head</td>
+                <td>Concrete slab support</td>
+                <td>₱280</td>
+                <td>₱1,600</td>
+              </tr>
+              <tr>
+                <td>Pipe Rail Package</td>
+                <td>4 GI Pipes, 4 Swivel Clamp, 4 Fixed Clamp</td>
+                <td>Safety rails / formworks</td>
+                <td>₱120</td>
+                <td>₱600</td>
+              </tr>
+              <tr>
+                <td>Contractor Starter Package</td>
+                <td>4 H-Frame, 8 Base Jack, 2 Catwalk, 1 Ladder</td>
+                <td>Residential construction</td>
+                <td>₱380</td>
+                <td>₱2,100</td>
+              </tr>
+              <tr>
+                <td>Contractor Project Package</td>
+                <td>6 H-Frame, 12 Base Jack, 3 Catwalk, 2 Ladder, 4 GI Pipes</td>
+                <td>Large construction projects</td>
+                <td>₱550</td>
+                <td>₱3,100</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
